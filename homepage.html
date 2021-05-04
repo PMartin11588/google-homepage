@@ -3,16 +3,16 @@
 <head>
 <style>
 
-ul {
+ul a {
 list-style-type: none;
-margin: 0;
-padding: 0;
+margin: 0px;
+padding: 3px;
 }
 
 
 li {
     display: inline-block;
-    
+
 }
 
 .searchbox { width: 75%;
@@ -20,7 +20,43 @@ margin: 10px;
 
 }
 
+.footer {
+    display: grid;
+    background-color: #DDDDDD;
+    margin-top: 100px;
+    grid-template-columns: 5% 5% 10% 10% 10% 10% 10% 10% 10% 10%;
+   grid-template-rows: 50% 50%;
+   grid-template-areas: "top top top top top top top top top top"
+   ". . adv busi how . . priv terms sett";
+   grid-row-gap: 50px
 
+
+}
+
+.carbon2 {
+    grid-area: top;
+    justify-self: center;
+}
+
+.adv {
+    grid-area: adv;
+}
+
+.busi {
+    grid-area: busi;
+}
+.how {
+    grid-area: how;
+}
+.priv {
+    grid-area: priv;
+}
+.terms {
+    grid-area: terms;
+}
+.sett {
+    grid-area: sett;
+}
 </style>
 
 </head>
@@ -46,6 +82,8 @@ margin: 10px;
 <p style="text-align: center;"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
 </p>
 
+
+
 <form style="text-align: center;"> 
     <input class="searchbox" type="text" name="Search" placeholder="Search">
     
@@ -54,6 +92,16 @@ margin: 10px;
 </form>
 
 </div>
+
+<ul class="footer">
+    <li class="carbon2"><a href="carbon2.asp">Carbon Neutral since 2007</a></li>
+    <li class="adv"><a href="adv.asp">Advertising</a></li>
+    <li class="busi"><a href="busi.asp">Business</a></li>
+    <li class="how"><a href="how.asp">How Search Works</a></li>
+    <li class="priv"><a href="priv.asp">Privacy</a></li>
+    <li class="terms"><a href="terms.asp">Terms</a></li>
+    <li class="sett"><a href="sett.asp">Settings</a></li>
+    </ul>
 
 </body>
 </html>
